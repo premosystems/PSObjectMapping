@@ -16,4 +16,5 @@
     #import <Foundation/Foundation.h>
 
     #import "CoreData+MagicalRecord.h"
+    #import "AFNetworking.h"
 #endif

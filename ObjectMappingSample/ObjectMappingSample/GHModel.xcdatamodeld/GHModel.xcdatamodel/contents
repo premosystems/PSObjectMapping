@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="GHAuthor" representedClassName="GHAuthor" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="commits" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GHCommit" inverseName="author" inverseEntity="GHCommit" syncable="YES"/>
+        <userInfo>
+            <entry key="primaryKey" value="email"/>
+        </userInfo>
+    </entity>
+    <entity name="GHCommit" representedClassName="GHCommit" syncable="YES">
+        <attribute name="sha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GHAuthor" inverseName="commits" inverseEntity="GHAuthor" syncable="YES"/>
+        <relationship name="files" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GHFile" inverseName="commit" inverseEntity="GHFile" syncable="YES"/>
+        <userInfo>
+            <entry key="primaryKey" value="sha"/>
+        </userInfo>
+    </entity>
+    <entity name="GHFile" representedClassName="GHFile" syncable="YES">
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="commit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GHCommit" inverseName="files" inverseEntity="GHCommit" syncable="YES"/>
+        <userInfo>
+            <entry key="primaryKey" value="url"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="GHAuthor" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GHCommit" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="GHFile" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

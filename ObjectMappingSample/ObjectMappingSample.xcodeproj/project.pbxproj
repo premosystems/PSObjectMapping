@@ -25,6 +25,23 @@
 		FA54EE7218416B62002C4EAF /* ObjectMappingSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE7118416B62002C4EAF /* ObjectMappingSampleTests.m */; };
 		FA54EE7C18416E6B002C4EAF /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = FA54EE7B18416E6B002C4EAF /* PodFile */; };
 		FA54EE8818417A76002C4EAF /* NSManagedObject+PSObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE8618417A76002C4EAF /* NSManagedObject+PSObjectMapping.m */; };
+		FA54EE8B18417B16002C4EAF /* GHModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE8918417B16002C4EAF /* GHModel.xcdatamodeld */; };
+		FA54EE96184181DC002C4EAF /* GHFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE95184181DC002C4EAF /* GHFile.m */; };
+		FA54EE99184181DD002C4EAF /* GHCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE98184181DD002C4EAF /* GHCommit.m */; };
+		FA54EE9C18418220002C4EAF /* GHCommit+PSObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE9B18418220002C4EAF /* GHCommit+PSObjectMapping.m */; };
+		FA54EE9F18418244002C4EAF /* GHFile+PSObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE9E18418244002C4EAF /* GHFile+PSObjectMapping.m */; };
+		FA54EEA218418258002C4EAF /* GHAuthor+PSObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEA118418258002C4EAF /* GHAuthor+PSObjectMapping.m */; };
+		FA54EEA418418282002C4EAF /* GHModelObjects.h in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEA318418276002C4EAF /* GHModelObjects.h */; };
+		FA54EEA7184182E6002C4EAF /* GHAuthor+RemoteLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEA6184182E6002C4EAF /* GHAuthor+RemoteLogic.m */; };
+		FA54EEAA184182F8002C4EAF /* GHCommit+RemoteLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEA9184182F8002C4EAF /* GHCommit+RemoteLogic.m */; };
+		FA54EEAD1841830F002C4EAF /* GHFile+RemoteLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEAC1841830F002C4EAF /* GHFile+RemoteLogic.m */; };
+		FA54EEAF184183A6002C4EAF /* GHConstants.h in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEAE18418399002C4EAF /* GHConstants.h */; };
+		FA54EEB1184185CC002C4EAF /* GHRemoteLogic.h in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEB0184185BE002C4EAF /* GHRemoteLogic.h */; };
+		FA54EEB5184186A7002C4EAF /* GHAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEB4184186A7002C4EAF /* GHAPIClient.m */; };
+		FA54EEB818425D0A002C4EAF /* GHModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEB718425D0A002C4EAF /* GHModel.m */; };
+		FA54EEBF184279D2002C4EAF /* GHCommitDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEBE184279D2002C4EAF /* GHCommitDetailsViewController.m */; };
+		FA54EEC218427A9D002C4EAF /* GHCommitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEC118427A9D002C4EAF /* GHCommitsViewController.m */; };
+		FA54EEC518427BA8002C4EAF /* GHAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEC418427BA8002C4EAF /* GHAuthor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +81,36 @@
 		FA54EE8518417A76002C4EAF /* NSManagedObject+PSObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+PSObjectMapping.h"; sourceTree = "<group>"; };
 		FA54EE8618417A76002C4EAF /* NSManagedObject+PSObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+PSObjectMapping.m"; sourceTree = "<group>"; };
 		FA54EE8718417A76002C4EAF /* PSMappableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMappableObject.h; sourceTree = "<group>"; };
+		FA54EE8A18417B16002C4EAF /* GHModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GHModel.xcdatamodel; sourceTree = "<group>"; };
+		FA54EE94184181DC002C4EAF /* GHFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHFile.h; sourceTree = "<group>"; };
+		FA54EE95184181DC002C4EAF /* GHFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHFile.m; sourceTree = "<group>"; };
+		FA54EE97184181DC002C4EAF /* GHCommit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommit.h; sourceTree = "<group>"; };
+		FA54EE98184181DD002C4EAF /* GHCommit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommit.m; sourceTree = "<group>"; };
+		FA54EE9A18418220002C4EAF /* GHCommit+PSObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHCommit+PSObjectMapping.h"; sourceTree = "<group>"; };
+		FA54EE9B18418220002C4EAF /* GHCommit+PSObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHCommit+PSObjectMapping.m"; sourceTree = "<group>"; };
+		FA54EE9D18418244002C4EAF /* GHFile+PSObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHFile+PSObjectMapping.h"; sourceTree = "<group>"; };
+		FA54EE9E18418244002C4EAF /* GHFile+PSObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHFile+PSObjectMapping.m"; sourceTree = "<group>"; };
+		FA54EEA018418258002C4EAF /* GHAuthor+PSObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHAuthor+PSObjectMapping.h"; sourceTree = "<group>"; };
+		FA54EEA118418258002C4EAF /* GHAuthor+PSObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHAuthor+PSObjectMapping.m"; sourceTree = "<group>"; };
+		FA54EEA318418276002C4EAF /* GHModelObjects.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = GHModelObjects.h; sourceTree = "<group>"; };
+		FA54EEA5184182E6002C4EAF /* GHAuthor+RemoteLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHAuthor+RemoteLogic.h"; sourceTree = "<group>"; };
+		FA54EEA6184182E6002C4EAF /* GHAuthor+RemoteLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHAuthor+RemoteLogic.m"; sourceTree = "<group>"; };
+		FA54EEA8184182F8002C4EAF /* GHCommit+RemoteLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHCommit+RemoteLogic.h"; sourceTree = "<group>"; };
+		FA54EEA9184182F8002C4EAF /* GHCommit+RemoteLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHCommit+RemoteLogic.m"; sourceTree = "<group>"; };
+		FA54EEAB1841830F002C4EAF /* GHFile+RemoteLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHFile+RemoteLogic.h"; sourceTree = "<group>"; };
+		FA54EEAC1841830F002C4EAF /* GHFile+RemoteLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHFile+RemoteLogic.m"; sourceTree = "<group>"; };
+		FA54EEAE18418399002C4EAF /* GHConstants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = GHConstants.h; sourceTree = "<group>"; };
+		FA54EEB0184185BE002C4EAF /* GHRemoteLogic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = GHRemoteLogic.h; sourceTree = "<group>"; };
+		FA54EEB3184186A7002C4EAF /* GHAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHAPIClient.h; sourceTree = "<group>"; };
+		FA54EEB4184186A7002C4EAF /* GHAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHAPIClient.m; sourceTree = "<group>"; };
+		FA54EEB618425D0A002C4EAF /* GHModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHModel.h; sourceTree = "<group>"; };
+		FA54EEB718425D0A002C4EAF /* GHModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHModel.m; sourceTree = "<group>"; };
+		FA54EEBD184279D2002C4EAF /* GHCommitDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommitDetailsViewController.h; sourceTree = "<group>"; };
+		FA54EEBE184279D2002C4EAF /* GHCommitDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommitDetailsViewController.m; sourceTree = "<group>"; };
+		FA54EEC018427A9D002C4EAF /* GHCommitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommitsViewController.h; sourceTree = "<group>"; };
+		FA54EEC118427A9D002C4EAF /* GHCommitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommitsViewController.m; sourceTree = "<group>"; };
+		FA54EEC318427BA8002C4EAF /* GHAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHAuthor.h; sourceTree = "<group>"; };
+		FA54EEC418427BA8002C4EAF /* GHAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHAuthor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,15 +174,17 @@
 		FA54EE4918416B62002C4EAF /* ObjectMappingSample */ = {
 			isa = PBXGroup;
 			children = (
+				FA54EEBC184279B0002C4EAF /* View */,
+				FA54EEB218418677002C4EAF /* Classes */,
+				FA54EE8C18417B4D002C4EAF /* Model */,
 				FA54EE5218416B62002C4EAF /* AppDelegate.h */,
 				FA54EE5318416B62002C4EAF /* AppDelegate.m */,
-				FA54EE5518416B62002C4EAF /* Main_iPhone.storyboard */,
-				FA54EE5818416B62002C4EAF /* Main_iPad.storyboard */,
 				FA54EE5B18416B62002C4EAF /* ViewController.h */,
 				FA54EE5C18416B62002C4EAF /* ViewController.m */,
 				FA54EE5E18416B62002C4EAF /* Images.xcassets */,
 				FA54EE4A18416B62002C4EAF /* Supporting Files */,
 				FA54EE7B18416E6B002C4EAF /* PodFile */,
+				FA54EEAE18418399002C4EAF /* GHConstants.h */,
 			);
 			path = ObjectMappingSample;
 			sourceTree = "<group>";
@@ -178,6 +227,90 @@
 			);
 			name = PSObjectMapping;
 			path = ../PSObjectMapping;
+			sourceTree = "<group>";
+		};
+		FA54EE8C18417B4D002C4EAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA54EEA318418276002C4EAF /* GHModelObjects.h */,
+				FA54EEB618425D0A002C4EAF /* GHModel.h */,
+				FA54EEB718425D0A002C4EAF /* GHModel.m */,
+				FA54EE8918417B16002C4EAF /* GHModel.xcdatamodeld */,
+				FA54EE8E18417B96002C4EAF /* Categories */,
+				FA54EE8D18417B90002C4EAF /* Objects */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA54EE8D18417B90002C4EAF /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				FA54EE97184181DC002C4EAF /* GHCommit.h */,
+				FA54EE98184181DD002C4EAF /* GHCommit.m */,
+				FA54EE94184181DC002C4EAF /* GHFile.h */,
+				FA54EE95184181DC002C4EAF /* GHFile.m */,
+				FA54EEC318427BA8002C4EAF /* GHAuthor.h */,
+				FA54EEC418427BA8002C4EAF /* GHAuthor.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		FA54EE8E18417B96002C4EAF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FA54EE9018417BDD002C4EAF /* RemoteLogic */,
+				FA54EE8F18417BBF002C4EAF /* ObjectMapping */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		FA54EE8F18417BBF002C4EAF /* ObjectMapping */ = {
+			isa = PBXGroup;
+			children = (
+				FA54EE9A18418220002C4EAF /* GHCommit+PSObjectMapping.h */,
+				FA54EE9B18418220002C4EAF /* GHCommit+PSObjectMapping.m */,
+				FA54EE9D18418244002C4EAF /* GHFile+PSObjectMapping.h */,
+				FA54EE9E18418244002C4EAF /* GHFile+PSObjectMapping.m */,
+				FA54EEA018418258002C4EAF /* GHAuthor+PSObjectMapping.h */,
+				FA54EEA118418258002C4EAF /* GHAuthor+PSObjectMapping.m */,
+			);
+			name = ObjectMapping;
+			sourceTree = "<group>";
+		};
+		FA54EE9018417BDD002C4EAF /* RemoteLogic */ = {
+			isa = PBXGroup;
+			children = (
+				FA54EEB0184185BE002C4EAF /* GHRemoteLogic.h */,
+				FA54EEA5184182E6002C4EAF /* GHAuthor+RemoteLogic.h */,
+				FA54EEA6184182E6002C4EAF /* GHAuthor+RemoteLogic.m */,
+				FA54EEA8184182F8002C4EAF /* GHCommit+RemoteLogic.h */,
+				FA54EEA9184182F8002C4EAF /* GHCommit+RemoteLogic.m */,
+				FA54EEAB1841830F002C4EAF /* GHFile+RemoteLogic.h */,
+				FA54EEAC1841830F002C4EAF /* GHFile+RemoteLogic.m */,
+			);
+			name = RemoteLogic;
+			sourceTree = "<group>";
+		};
+		FA54EEB218418677002C4EAF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA54EEB3184186A7002C4EAF /* GHAPIClient.h */,
+				FA54EEB4184186A7002C4EAF /* GHAPIClient.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FA54EEBC184279B0002C4EAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA54EE5518416B62002C4EAF /* Main_iPhone.storyboard */,
+				FA54EE5818416B62002C4EAF /* Main_iPad.storyboard */,
+				FA54EEC018427A9D002C4EAF /* GHCommitsViewController.h */,
+				FA54EEC118427A9D002C4EAF /* GHCommitsViewController.m */,
+				FA54EEBD184279D2002C4EAF /* GHCommitDetailsViewController.h */,
+				FA54EEBE184279D2002C4EAF /* GHCommitDetailsViewController.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,10 +447,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA54EEA218418258002C4EAF /* GHAuthor+PSObjectMapping.m in Sources */,
+				FA54EEC218427A9D002C4EAF /* GHCommitsViewController.m in Sources */,
+				FA54EEB5184186A7002C4EAF /* GHAPIClient.m in Sources */,
 				FA54EE5D18416B62002C4EAF /* ViewController.m in Sources */,
+				FA54EE9C18418220002C4EAF /* GHCommit+PSObjectMapping.m in Sources */,
+				FA54EEC518427BA8002C4EAF /* GHAuthor.m in Sources */,
+				FA54EEB818425D0A002C4EAF /* GHModel.m in Sources */,
+				FA54EEBF184279D2002C4EAF /* GHCommitDetailsViewController.m in Sources */,
+				FA54EEA7184182E6002C4EAF /* GHAuthor+RemoteLogic.m in Sources */,
+				FA54EEA418418282002C4EAF /* GHModelObjects.h in Sources */,
+				FA54EE96184181DC002C4EAF /* GHFile.m in Sources */,
 				FA54EE5418416B62002C4EAF /* AppDelegate.m in Sources */,
+				FA54EE8B18417B16002C4EAF /* GHModel.xcdatamodeld in Sources */,
+				FA54EEAD1841830F002C4EAF /* GHFile+RemoteLogic.m in Sources */,
+				FA54EE9F18418244002C4EAF /* GHFile+PSObjectMapping.m in Sources */,
 				FA54EE8818417A76002C4EAF /* NSManagedObject+PSObjectMapping.m in Sources */,
+				FA54EEAA184182F8002C4EAF /* GHCommit+RemoteLogic.m in Sources */,
+				FA54EEB1184185CC002C4EAF /* GHRemoteLogic.h in Sources */,
+				FA54EE99184181DD002C4EAF /* GHCommit.m in Sources */,
 				FA54EE5018416B62002C4EAF /* main.m in Sources */,
+				FA54EEAF184183A6002C4EAF /* GHConstants.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +702,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA54EE8918417B16002C4EAF /* GHModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA54EE8A18417B16002C4EAF /* GHModel.xcdatamodel */,
+			);
+			currentVersion = FA54EE8A18417B16002C4EAF /* GHModel.xcdatamodel */;
+			path = GHModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FA54EE3818416B62002C4EAF /* Project object */;
 }

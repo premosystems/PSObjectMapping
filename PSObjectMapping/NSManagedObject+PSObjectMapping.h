@@ -14,10 +14,10 @@ typedef id<PSMappableObject> (^CPKMappingBlock)(id<PSMappableObject> object, NSD
 
 @interface NSManagedObject (PSObjectMapping)
 
-+ (id) objectWithDictionary:(NSDictionary*)dict;
-+ (id) objectWithDictionary:(NSDictionary*)dict mapRelationships:(BOOL)mapRelationships;
++ (NSManagedObject<PSMappableObject>*) objectWithDictionary:(NSDictionary*)dict;
++ (NSManagedObject<PSMappableObject>*) objectWithDictionary:(NSDictionary*)dict mapRelationships:(BOOL)mapRelationships;
 
-+ (void) mapWithCollection:(id)arrayOrDictionary rootObjectKey:(NSString*)rootObjectKey customObjectMappingBlock:(void (^)(NSDictionary *keyedValues, id object))customObjectMappingBlock mapRelationships:(BOOL)mapRelationships;
++ (NSArray*) mapWithCollection:(id)arrayOrDictionary rootObjectKey:(NSString*)rootObjectKey customObjectMappingBlock:(void (^)(NSDictionary *keyedValues, id object))customObjectMappingBlock mapRelationships:(BOOL)mapRelationships;
 
 - (void)mapWithDictionary:(NSDictionary *)keyedValues;
 - (void)mapWithDictionary:(NSDictionary *)keyedValues dateFormatter:(NSDateFormatter *)dateFormatter;

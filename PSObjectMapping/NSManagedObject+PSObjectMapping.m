@@ -21,12 +21,12 @@ _Pragma("clang diagnostic pop") \
 
 #pragma mark - Serialization Methods -
 
-+ (id) objectWithDictionary:(NSDictionary*)dict
++ (NSManagedObject<PSMappableObject>*) objectWithDictionary:(NSDictionary*)dict
 {
     return [self objectWithDictionary:dict mapRelationships:YES];
 }
 
-+ (id) objectWithDictionary:(NSDictionary*)dict mapRelationships:(BOOL)mapRelationships
++ (NSManagedObject<PSMappableObject>*) objectWithDictionary:(NSDictionary*)dict mapRelationships:(BOOL)mapRelationships
 {
     [[NSManagedObjectContext contextForCurrentThread] setUndoManager:nil];
     
@@ -58,9 +58,7 @@ _Pragma("clang diagnostic pop") \
             }
         }
     };
-    
-    
-        
+            
         // Let's just get a count instead of a query
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K = %@",[self objectPrimaryKeyProperty],[dict valueForKey:remotePrimaryKeyProperty]];
         
@@ -78,35 +76,32 @@ _Pragma("clang diagnostic pop") \
             
             object = [remoteObject createInContext:[NSManagedObjectContext contextForCurrentThread]];
             
-            
-            
             PSObjectMappingBlock();
-            
-            
-            
         }
     
-    return object;
+    return (NSManagedObject<PSMappableObject>*)object;
 }
 
-+ (void) mapWithCollection:(id)arrayOrDictionary rootObjectKey:(NSString*)rootObjectKey customObjectMappingBlock:(void (^)(NSDictionary *keyedValues, id object))customObjectMappingBlock mapRelationships:(BOOL)mapRelationships
++ (NSArray*) mapWithCollection:(id)arrayOrDictionary rootObjectKey:(NSString*)rootObjectKey customObjectMappingBlock:(void (^)(NSDictionary *keyedValues, id object))customObjectMappingBlock mapRelationships:(BOOL)mapRelationships
 {
-    __block id object = nil;
+    __block NSMutableArray *managedObjectIDs = [[NSMutableArray alloc] init];
     
     if (arrayOrDictionary == nil)
     { // when no objects were passed to the method
         
-        return;
+        return nil;
         
     } else { // Single Object case
         
         if (rootObjectKey == nil && [arrayOrDictionary isKindOfClass:[NSDictionary class]]) {
             
             // Map the single object
-            object = [[self class] objectWithDictionary:(NSDictionary*)arrayOrDictionary mapRelationships:mapRelationships];
+            NSManagedObject<PSMappableObject> *object = [[self class] objectWithDictionary:(NSDictionary*)arrayOrDictionary mapRelationships:mapRelationships];
             if (customObjectMappingBlock) {
                 customObjectMappingBlock(arrayOrDictionary,object);
             }
+            
+            [managedObjectIDs addObject:object.objectID];
         }
         else // Map and array of objects
         {
@@ -128,15 +123,17 @@ _Pragma("clang diagnostic pop") \
             // Map the collection
             [rawArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 
-                id  object = [[self class] objectWithDictionary:(NSDictionary*)obj mapRelationships:mapRelationships];
+                NSManagedObject<PSMappableObject> *object = [[self class] objectWithDictionary:(NSDictionary*)obj mapRelationships:mapRelationships];
                 if (customObjectMappingBlock) {
                     customObjectMappingBlock(obj, object);
                 }
                 
+                [managedObjectIDs addObject:object.objectID];
             }];
-            
         }
     }
+    
+    return managedObjectIDs;
 }
 
 #pragma mark - Custom Mapping -

@@ -7,8 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "GHModel.h"
+#import "GHConstants.h"
 
 @implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    
+    [GHCommit getCommitsForOwner:kGHRepoOwnerName repo:kGHRepoName completionBlock:^(NSArray *result, NSError *error) {
+        //
+    }];
+    
+    // Override point for customization after application launch.
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
