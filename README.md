@@ -57,6 +57,6 @@ Where responseObject is an NSArray of dictionaries. If the collection is a dicti
 
 ## Contact
 
-For questions or issues with PSObjectMapping please contact premosystems (https://github.com/premosystems)
+For questions or issues with PSObjectMapping please contact [premosystems](https://github.com/premosystems)
 
 
