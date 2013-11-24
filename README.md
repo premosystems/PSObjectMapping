@@ -1,9 +1,7 @@
-PSObjectMapping
-===============
+# PSObjectMapping
 
-Overview
-========
-========
+
+## Overview
 
 PSObjectMapping maps NSDictionary and NSArray collections to CoreData NSManagedObjects.
 
@@ -41,9 +39,7 @@ For PSObjectMapping to know how to map data from an NSDictionary to NSManagedObj
 @end
 ```
 
-Example Usage
-=============
-=============
+## Example Usage
 
 To use PSObjectMapping there exists a class method applied to all PSMappableObjects:
 
