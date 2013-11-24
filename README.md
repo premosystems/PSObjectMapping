@@ -11,7 +11,7 @@ The development of PSObjectMapping came out of a personal need, and although it 
 
 ## Example Setup
 
-To support object mapping, you must tell PSObjectMapping whih property on your XCDataModel is the object's primary key. An example is depicted in the screenshot below.
+To support object mapping, you must tell PSObjectMapping which property on your XCDataModel is the object's primary key. An example is depicted in the screenshot below:
 
 ![XCode Data Model Primary Key Setup](https://raw.github.com/premosystems/PSObjectMapping/gh-pages/xcdatamodel-primary-key-screenshot.png)
 
@@ -56,6 +56,11 @@ NSArray *objectIDs = [GHCommit mapWithCollection:responseObject rootObjectKey:ni
 Where responseObject is an NSArray of dictionaries. If the collection is a dictionary with an array inside one of its keys, just tell PSObjectMapping what the rootObjectKey is and it will automatically extract it.
 
 See the including example project for complete details.
+
+## TODO / Known Issues
+
+* Alter property mapping logic to accept key paths to describe which data point to map in the hierarchy.
+* Documentation, unit tests
 
 ## Contact
 
