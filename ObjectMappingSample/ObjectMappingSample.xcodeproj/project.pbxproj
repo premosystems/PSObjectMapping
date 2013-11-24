@@ -24,7 +24,6 @@
 		FA54EE7018416B62002C4EAF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA54EE6E18416B62002C4EAF /* InfoPlist.strings */; };
 		FA54EE7218416B62002C4EAF /* ObjectMappingSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE7118416B62002C4EAF /* ObjectMappingSampleTests.m */; };
 		FA54EE7C18416E6B002C4EAF /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = FA54EE7B18416E6B002C4EAF /* PodFile */; };
-		FA54EE8818417A76002C4EAF /* NSManagedObject+PSObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE8618417A76002C4EAF /* NSManagedObject+PSObjectMapping.m */; };
 		FA54EE8B18417B16002C4EAF /* GHModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE8918417B16002C4EAF /* GHModel.xcdatamodeld */; };
 		FA54EE9C18418220002C4EAF /* GHCommit+PSObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE9B18418220002C4EAF /* GHCommit+PSObjectMapping.m */; };
 		FA54EE9F18418244002C4EAF /* GHFile+PSObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EE9E18418244002C4EAF /* GHFile+PSObjectMapping.m */; };
@@ -80,9 +79,6 @@
 		FA54EE6F18416B62002C4EAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA54EE7118416B62002C4EAF /* ObjectMappingSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectMappingSampleTests.m; sourceTree = "<group>"; };
 		FA54EE7B18416E6B002C4EAF /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = SOURCE_ROOT; };
-		FA54EE8518417A76002C4EAF /* NSManagedObject+PSObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+PSObjectMapping.h"; sourceTree = "<group>"; };
-		FA54EE8618417A76002C4EAF /* NSManagedObject+PSObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+PSObjectMapping.m"; sourceTree = "<group>"; };
-		FA54EE8718417A76002C4EAF /* PSMappableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMappableObject.h; sourceTree = "<group>"; };
 		FA54EE8A18417B16002C4EAF /* GHModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GHModel.xcdatamodel; sourceTree = "<group>"; };
 		FA54EE9A18418220002C4EAF /* GHCommit+PSObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GHCommit+PSObjectMapping.h"; sourceTree = "<group>"; };
 		FA54EE9B18418220002C4EAF /* GHCommit+PSObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GHCommit+PSObjectMapping.m"; sourceTree = "<group>"; };
@@ -167,7 +163,6 @@
 		FA54EE4218416B62002C4EAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA54EE8418417A76002C4EAF /* PSObjectMapping */,
 				FA54EE4318416B62002C4EAF /* Foundation.framework */,
 				FA54EE4518416B62002C4EAF /* CoreGraphics.framework */,
 				FA54EE4718416B62002C4EAF /* UIKit.framework */,
@@ -222,17 +217,6 @@
 				FA54EE6E18416B62002C4EAF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FA54EE8418417A76002C4EAF /* PSObjectMapping */ = {
-			isa = PBXGroup;
-			children = (
-				FA54EE8518417A76002C4EAF /* NSManagedObject+PSObjectMapping.h */,
-				FA54EE8618417A76002C4EAF /* NSManagedObject+PSObjectMapping.m */,
-				FA54EE8718417A76002C4EAF /* PSMappableObject.h */,
-			);
-			name = PSObjectMapping;
-			path = ../PSObjectMapping;
 			sourceTree = "<group>";
 		};
 		FA54EE8C18417B4D002C4EAF /* Model */ = {
@@ -474,7 +458,6 @@
 				FA54EE8B18417B16002C4EAF /* GHModel.xcdatamodeld in Sources */,
 				FA54EEAD1841830F002C4EAF /* GHFile+RemoteLogic.m in Sources */,
 				FA54EE9F18418244002C4EAF /* GHFile+PSObjectMapping.m in Sources */,
-				FA54EE8818417A76002C4EAF /* NSManagedObject+PSObjectMapping.m in Sources */,
 				FA54EEAA184182F8002C4EAF /* GHCommit+RemoteLogic.m in Sources */,
 				FA54EEB1184185CC002C4EAF /* GHRemoteLogic.h in Sources */,
 				FA54EEC818429860002C4EAF /* GHCommitFilesViewController.m in Sources */,
