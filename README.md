@@ -11,6 +11,8 @@ The solution consists of a category on NSManagedObject and a protocol describing
 
 The development of PSObjectMapping came out of a personal need, and although it is being used in production, it is still very much a work in progress.
 
+## Example Setup
+![XCode Data Model Primary Key Setup](https://raw.github.com/premosystems/PSObjectMapping/gh-pages/xcdatamodel-primary-key-screenshot.png)
 
 Example Usage
 =============
