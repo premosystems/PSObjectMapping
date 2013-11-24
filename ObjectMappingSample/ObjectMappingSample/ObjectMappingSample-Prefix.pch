@@ -17,4 +17,5 @@
 
     #import "CoreData+MagicalRecord.h"
     #import "AFNetworking.h"
+    #import "UIImageView+AFNetworking.h"
 #endif

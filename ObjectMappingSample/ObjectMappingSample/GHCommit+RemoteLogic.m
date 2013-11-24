@@ -10,14 +10,16 @@
 #import "GHCommit+PSObjectMapping.h"
 #import "NSManagedObject+PSObjectMapping.h"
 #import "GHAPIClient.h"
-
+#import "GHConstants.h"
 
 @implementation GHCommit (RemoteLogic)
 
-+ (void) getCommitsForOwner:(NSString*)owner repo:(NSString*)repo completionBlock:(GHRemoteLogicCompletionBlock)completionBlock
+// See: http://developer.github.com/v3/repos/commits/
+
++ (void) getCommitsWithCompletionBlock:(GHRemoteLogicCompletionBlock)completionBlock
 {
-    // repos/AFNetworking/AFNetworking/
-    NSString *path = [NSString stringWithFormat:@"repos/%@/%@/commits",owner,repo];
+    // /repos/:owner/:repo/commits
+    NSString *path = [NSString stringWithFormat:@"repos/%@/%@/commits",kGHRepoOwnerName,kGHRepoName];
     
     [[GHAPIClient sharedClient] GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         
@@ -43,5 +45,37 @@
         
     }];
 }
+
+- (void) getDetailsWithCompletionBlock:(GHRemoteLogicCompletionBlock)completionBlock
+{
+    // /repos/:owner/:repo/commits/:sha
+    NSString *path = [NSString stringWithFormat:@"repos/%@/%@/commits/%@",kGHRepoOwnerName,kGHRepoName,self.sha];
+    
+    [[GHAPIClient sharedClient] GET:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        NSLog(@"responseObject: %@",responseObject);
+        
+        [MagicalRecord saveUsingCurrentThreadContextWithBlockAndWait:^(NSManagedObjectContext *localContext) {
+            
+            NSArray *objectIDs = [GHCommit mapWithCollection:responseObject rootObjectKey:nil customObjectMappingBlock:nil mapRelationships:YES];
+            
+            if (completionBlock) {
+                completionBlock(objectIDs,nil);
+            }
+            
+        }];
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        
+        NSLog(@"error: %@",[error localizedDescription]);
+        
+        if (completionBlock) {
+            completionBlock(nil,error);
+        }
+        
+    }];
+
+}
+
 
 @end

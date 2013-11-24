@@ -15,7 +15,7 @@
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [GHCommit getCommitsForOwner:kGHRepoOwnerName repo:kGHRepoName completionBlock:^(NSArray *result, NSError *error) {
+    [GHCommit getCommitsWithCompletionBlock:^(NSArray *result, NSError *error) {
         //
     }];
     

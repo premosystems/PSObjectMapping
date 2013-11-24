@@ -13,14 +13,9 @@
 + (NSDictionary*) propertyMappings
 {
     return @{
-             @"email":@"email",
-             @"name":@"name"
+             @"login":@"login",
+              @"avatar_url":@"avatarURLString"
              };
-}
-
-+ (NSDictionary*) relationshipMappings
-{
-    return @{@"":@""};
 }
 
 @end

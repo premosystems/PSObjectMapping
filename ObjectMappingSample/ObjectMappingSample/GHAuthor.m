@@ -12,8 +12,8 @@
 
 @implementation GHAuthor
 
-@dynamic email;
-@dynamic name;
+@dynamic login;
+@dynamic avatarURLString;
 @dynamic commits;
 
 @end

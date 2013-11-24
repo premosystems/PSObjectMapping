@@ -20,8 +20,10 @@
 
 + (NSDictionary*) relationshipMappings
 {
-    return nil;
-    //return @{@"":@""};
+    return @{
+             @"author":@"author",
+             @"files":@"files"
+             };
 }
 
 @end

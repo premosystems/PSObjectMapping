@@ -83,7 +83,7 @@
     GHCommit *commit = [self.commits objectAtIndex:indexPath.row];
     
     cell.textLabel.text = commit.sha;
-    cell.detailTextLabel.text = @"Author Here";
+    cell.detailTextLabel.text = commit.author.login;
     
     return cell;
 }

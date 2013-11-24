@@ -7,8 +7,16 @@
 //
 
 #import "GHCommitDetailsViewController.h"
+#import "GHModel.h"
+#import "GHCommitFilesViewController.h"
+
 
 @interface GHCommitDetailsViewController ()
+
+@property (strong, nonatomic) IBOutlet UILabel *shaLabel;
+@property (strong, nonatomic) IBOutlet UILabel *authorLabel;
+@property (strong, nonatomic) IBOutlet UILabel *dateLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *avatarImageView;
 
 @end
 
@@ -27,6 +35,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.shaLabel.text = self.commit.sha;
+    
+    [self.avatarImageView setImageWithURL:[NSURL URLWithString:self.commit.author.avatarURLString]];
+    
+    [self.commit getDetailsWithCompletionBlock:^(NSArray *result, NSError *error) {
+        
+        NSManagedObjectID *objectID = result[0];
+        GHCommit *commit = (GHCommit*)[[NSManagedObjectContext defaultContext] objectWithID:objectID];
+        
+        GHCommitFilesViewController *filesViewController = [self.childViewControllers objectAtIndex:0];
+        [filesViewController updateWithCommit:commit];
+        
+    }];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -12,12 +12,12 @@
 
 + (NSDictionary*) propertyMappings
 {
-    return @{@"url":@"url"};
+    return @{
+             @"url":@"raw_url",
+             @"filename":@"filename",
+             @"sha":@"sha"
+             };
 }
 
-+ (NSDictionary*) relationshipMappings
-{
-    return @{@"":@""};
-}
 
 @end

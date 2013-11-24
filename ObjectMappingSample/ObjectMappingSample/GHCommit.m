@@ -2,7 +2,7 @@
 //  GHCommit.m
 //  ObjectMappingSample
 //
-//  Created by Vincil Bishop on 11/23/13.
+//  Created by Vincil Bishop on 11/24/13.
 //  Copyright (c) 2013 Premier Mobile Systems. All rights reserved.
 //
 
@@ -15,7 +15,7 @@
 
 @dynamic sha;
 @dynamic url;
+@dynamic author;
 @dynamic files;
-@dynamic authors;
 
 @end

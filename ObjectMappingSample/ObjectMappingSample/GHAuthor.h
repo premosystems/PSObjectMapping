@@ -13,8 +13,8 @@
 
 @interface GHAuthor : NSManagedObject
 
-@property (nonatomic, retain) NSString * email;
-@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * login;
+@property (nonatomic, retain) NSString * avatarURLString;
 @property (nonatomic, retain) NSSet *commits;
 @end
 

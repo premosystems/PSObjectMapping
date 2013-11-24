@@ -2,7 +2,7 @@
 //  GHCommit.h
 //  ObjectMappingSample
 //
-//  Created by Vincil Bishop on 11/23/13.
+//  Created by Vincil Bishop on 11/24/13.
 //  Copyright (c) 2013 Premier Mobile Systems. All rights reserved.
 //
 
@@ -15,8 +15,8 @@
 
 @property (nonatomic, retain) NSString * sha;
 @property (nonatomic, retain) NSString * url;
+@property (nonatomic, retain) GHAuthor *author;
 @property (nonatomic, retain) NSSet *files;
-@property (nonatomic, retain) NSSet *authors;
 @end
 
 @interface GHCommit (CoreDataGeneratedAccessors)
@@ -25,10 +25,5 @@
 - (void)removeFilesObject:(GHFile *)value;
 - (void)addFiles:(NSSet *)values;
 - (void)removeFiles:(NSSet *)values;
-
-- (void)addAuthorsObject:(GHAuthor *)value;
-- (void)removeAuthorsObject:(GHAuthor *)value;
-- (void)addAuthors:(NSSet *)values;
-- (void)removeAuthors:(NSSet *)values;
 
 @end

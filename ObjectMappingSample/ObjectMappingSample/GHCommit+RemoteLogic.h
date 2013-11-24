@@ -11,7 +11,9 @@
 
 @interface GHCommit (RemoteLogic)
 
-+ (void) getCommitsForOwner:(NSString*)owner repo:(NSString*)repo completionBlock:(GHRemoteLogicCompletionBlock)completionBlock
++ (void) getCommitsWithCompletionBlock:(GHRemoteLogicCompletionBlock)completionBlock
 ;
+
+- (void) getDetailsWithCompletionBlock:(GHRemoteLogicCompletionBlock)completionBlock;
 
 @end
