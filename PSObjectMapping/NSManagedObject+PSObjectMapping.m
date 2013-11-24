@@ -75,7 +75,7 @@ _Pragma("clang diagnostic pop") \
         if (!object) {
             
             object = [remoteObject createInContext:[NSManagedObjectContext contextForCurrentThread]];
-            
+            [[NSManagedObjectContext contextForCurrentThread] obtainPermanentIDsForObjects:@[object] error:nil];
             PSObjectMappingBlock();
         }
     
