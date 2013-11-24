@@ -34,10 +34,8 @@
         <h1>
 <a name="psobjectmapping" class="anchor" href="#psobjectmapping"><span class="octicon octicon-link"></span></a>PSObjectMapping</h1>
 
-<h1>
-<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h1>
-
-<h1></h1>
+<h2>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h2>
 
 <p>PSObjectMapping maps NSDictionary and NSArray collections to CoreData NSManagedObjects.</p>
 
@@ -48,12 +46,35 @@
 <h2>
 <a name="example-setup" class="anchor" href="#example-setup"><span class="octicon octicon-link"></span></a>Example Setup</h2>
 
+<p>To support object mapping, you must tell PSObjectMapping whih property on your XCDataModel is the object's primary key. An example is depicted in the screenshot below.</p>
+
 <p><img src="https://raw.github.com/premosystems/PSObjectMapping/gh-pages/xcdatamodel-primary-key-screenshot.png" alt="XCode Data Model Primary Key Setup"></p>
 
-<h1>
-<a name="example-usage" class="anchor" href="#example-usage"><span class="octicon octicon-link"></span></a>Example Usage</h1>
+<p>For PSObjectMapping to know how to map data from an NSDictionary to NSManagedObject attributes, create a category on each NSManagedObject subclass with methods similar to the following.</p>
 
-<h1></h1>
+<div class="highlight highlight-objective-c"><pre><span class="k">@implementation</span> <span class="nc">GHCommit</span> <span class="nl">(PSObjectMapping)</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="n">NSDictionary</span><span class="o">*</span><span class="p">)</span> <span class="nf">propertyMappings</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="err">@</span><span class="p">{</span>
+             <span class="s">@"sha"</span><span class="o">:</span><span class="s">@"sha"</span><span class="p">,</span>
+             <span class="s">@"url"</span><span class="o">:</span><span class="s">@"url"</span>
+             <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="k">+</span> <span class="p">(</span><span class="n">NSDictionary</span><span class="o">*</span><span class="p">)</span> <span class="nf">relationshipMappings</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="err">@</span><span class="p">{</span>
+             <span class="s">@"author"</span><span class="o">:</span><span class="s">@"author"</span><span class="p">,</span>
+             <span class="s">@"files"</span><span class="o">:</span><span class="s">@"files"</span>
+             <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="k">@end</span>
+</pre></div>
+
+<h2>
+<a name="example-usage" class="anchor" href="#example-usage"><span class="octicon octicon-link"></span></a>Example Usage</h2>
 
 <p>To use PSObjectMapping there exists a class method applied to all PSMappableObjects:</p>
 
@@ -61,6 +82,18 @@
 </pre></div>
 
 <p>Pass the NSArray or NSDictionary containing keyed values to this method, and an array of NSManagedObjectIDs is returned for the objects that were mapped.</p>
+
+<div class="highlight highlight-objective-c"><pre><span class="n">NSArray</span> <span class="o">*</span><span class="n">objectIDs</span> <span class="o">=</span> <span class="p">[</span><span class="n">GHCommit</span> <span class="n">mapWithCollection</span><span class="o">:</span><span class="n">responseObject</span> <span class="n">rootObjectKey</span><span class="o">:</span><span class="nb">nil</span> <span class="n">customObjectMappingBlock</span><span class="o">:</span><span class="nb">nil</span> <span class="n">mapRelationships</span><span class="o">:</span><span class="nb">YES</span><span class="p">];</span>
+</pre></div>
+
+<p>Where responseObject is an NSArray of dictionaries. If the collection is a dictionary with an array inside one of its keys, just tell PSObjectMapping what the rootObjectKey is and it will automatically extract it.</p>
+
+<p>See the including example project for complete details.</p>
+
+<h2>
+<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>For questions or issues with PSObjectMapping please contact <a href="https://github.com/premosystems">premosystems</a></p>
       </section>
     </div>
 
