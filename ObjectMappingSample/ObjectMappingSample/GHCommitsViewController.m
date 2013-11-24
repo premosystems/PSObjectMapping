@@ -8,6 +8,7 @@
 
 #import "GHCommitsViewController.h"
 #import "GHModel.h"
+#import "GHCommitDetailsViewController.h"
 
 @interface GHCommitsViewController ()
 
@@ -85,6 +86,18 @@
     cell.detailTextLabel.text = @"Author Here";
     
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
+{
+    
+    if ([segue.identifier isEqualToString:@"CommitDetailsPush"]) {
+        GHCommitDetailsViewController *viewController = [segue destinationViewController];
+        GHCommit *commit = [self.commits objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+        viewController.commit = commit;
+
+    }
+    
 }
 
 /*

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class GHCommit;
+
 @interface GHCommitDetailsViewController : UIViewController
+
+@property (nonatomic,strong) GHCommit *commit;
 
 @end

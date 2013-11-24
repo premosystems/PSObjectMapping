@@ -53,7 +53,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="hlT-AV-Bbm" kind="push" id="gxU-er-fTW"/>
+                                    <segue destination="hlT-AV-Bbm" kind="push" identifier="CommitDetailsPush" id="gxU-er-fTW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="438" y="106"/>
         </scene>
-        <!--View Controller - Commit Details-->
+        <!--Commit Details View Controller - Commit Details-->
         <scene sceneID="cEE-t9-V8Q">
             <objects>
-                <viewController id="hlT-AV-Bbm" sceneMemberID="viewController">
+                <viewController id="hlT-AV-Bbm" customClass="GHCommitDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dmu-Ec-A8Z"/>
                         <viewControllerLayoutGuide type="bottom" id="RK6-Ba-VSB"/>
