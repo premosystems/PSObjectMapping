@@ -15,6 +15,8 @@
 
 @dynamic sha;
 @dynamic url;
+@dynamic message;
+@dynamic date;
 @dynamic author;
 @dynamic files;
 

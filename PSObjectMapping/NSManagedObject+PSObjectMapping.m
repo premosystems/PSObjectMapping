@@ -154,7 +154,7 @@ _Pragma("clang diagnostic pop") \
         
         if (customValue || relationshipName || propertyName) {
             
-            CPKMappingBlock mappingBlock = (CPKMappingBlock)obj;
+            PSMappingBlock mappingBlock = (PSMappingBlock)obj;
             
             if (mappingBlock) {
                 blockObject = mappingBlock(blockObject,dictionary,customValue);

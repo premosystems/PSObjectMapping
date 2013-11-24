@@ -9,6 +9,7 @@
 #import "GHCommitsViewController.h"
 #import "GHModel.h"
 #import "GHCommitDetailsViewController.h"
+#import "GHCommitsTableViewCell.h"
 
 @interface GHCommitsViewController ()
 
@@ -78,26 +79,26 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    GHCommitsTableViewCell *cell = (GHCommitsTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     GHCommit *commit = [self.commits objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = commit.sha;
-    cell.detailTextLabel.text = commit.author.login;
+    cell.shaLabel.text = commit.sha;
+    cell.authorLabel.text = commit.author.login;
+    
+    [cell.avatarImageView setImageWithURL:[NSURL URLWithString:commit.author.avatarURLString]];
     
     return cell;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
 {
-    
     if ([segue.identifier isEqualToString:@"CommitDetailsPush"]) {
         GHCommitDetailsViewController *viewController = [segue destinationViewController];
         GHCommit *commit = [self.commits objectAtIndex:[self.tableView indexPathForSelectedRow].row];
         viewController.commit = commit;
 
     }
-    
 }
 
 /*

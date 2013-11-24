@@ -10,7 +10,7 @@
 
 @protocol PSMappableObject;
 
-typedef id<PSMappableObject> (^CPKMappingBlock)(id<PSMappableObject> object, NSDictionary *allValues, id values);
+typedef id<PSMappableObject> (^PSMappingBlock)(id<PSMappableObject> object, NSDictionary *allValues, id values);
 
 @interface NSManagedObject (PSObjectMapping)
 

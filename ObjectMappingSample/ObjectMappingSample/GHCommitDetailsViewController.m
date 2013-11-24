@@ -36,6 +36,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.shaLabel.text = self.commit.sha;
+    self.authorLabel.text = self.commit.author.login;
+    self.dateLabel.text = [self.commit.date description];
     
     [self.avatarImageView setImageWithURL:[NSURL URLWithString:self.commit.author.avatarURLString]];
     

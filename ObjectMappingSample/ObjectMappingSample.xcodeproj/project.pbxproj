@@ -40,9 +40,10 @@
 		FA54EEBF184279D2002C4EAF /* GHCommitDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEBE184279D2002C4EAF /* GHCommitDetailsViewController.m */; };
 		FA54EEC218427A9D002C4EAF /* GHCommitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEC118427A9D002C4EAF /* GHCommitsViewController.m */; };
 		FA54EEC818429860002C4EAF /* GHCommitFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEC718429860002C4EAF /* GHCommitFilesViewController.m */; };
-		FA54EECB1842A145002C4EAF /* GHFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EECA1842A145002C4EAF /* GHFile.m */; };
-		FA54EECE1842A146002C4EAF /* GHCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EECD1842A146002C4EAF /* GHCommit.m */; };
-		FA54EED71842A79C002C4EAF /* GHAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EED61842A79C002C4EAF /* GHAuthor.m */; };
+		FA54EEDA1842A950002C4EAF /* GHCommitsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EED91842A950002C4EAF /* GHCommitsTableViewCell.m */; };
+		FA54EEDF1842AD71002C4EAF /* GHFile.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEDE1842AD71002C4EAF /* GHFile.m */; };
+		FA54EEE21842AD72002C4EAF /* GHAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEE11842AD72002C4EAF /* GHAuthor.m */; };
+		FA54EEE51842AD72002C4EAF /* GHCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = FA54EEE41842AD72002C4EAF /* GHCommit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,12 +109,14 @@
 		FA54EEC118427A9D002C4EAF /* GHCommitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommitsViewController.m; sourceTree = "<group>"; };
 		FA54EEC618429860002C4EAF /* GHCommitFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommitFilesViewController.h; sourceTree = "<group>"; };
 		FA54EEC718429860002C4EAF /* GHCommitFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommitFilesViewController.m; sourceTree = "<group>"; };
-		FA54EEC91842A145002C4EAF /* GHFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHFile.h; sourceTree = "<group>"; };
-		FA54EECA1842A145002C4EAF /* GHFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHFile.m; sourceTree = "<group>"; };
-		FA54EECC1842A146002C4EAF /* GHCommit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommit.h; sourceTree = "<group>"; };
-		FA54EECD1842A146002C4EAF /* GHCommit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommit.m; sourceTree = "<group>"; };
-		FA54EED51842A79C002C4EAF /* GHAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHAuthor.h; sourceTree = "<group>"; };
-		FA54EED61842A79C002C4EAF /* GHAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHAuthor.m; sourceTree = "<group>"; };
+		FA54EED81842A950002C4EAF /* GHCommitsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommitsTableViewCell.h; sourceTree = "<group>"; };
+		FA54EED91842A950002C4EAF /* GHCommitsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommitsTableViewCell.m; sourceTree = "<group>"; };
+		FA54EEDD1842AD71002C4EAF /* GHFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHFile.h; sourceTree = "<group>"; };
+		FA54EEDE1842AD71002C4EAF /* GHFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHFile.m; sourceTree = "<group>"; };
+		FA54EEE01842AD72002C4EAF /* GHAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHAuthor.h; sourceTree = "<group>"; };
+		FA54EEE11842AD72002C4EAF /* GHAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHAuthor.m; sourceTree = "<group>"; };
+		FA54EEE31842AD72002C4EAF /* GHCommit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommit.h; sourceTree = "<group>"; };
+		FA54EEE41842AD72002C4EAF /* GHCommit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,12 +251,12 @@
 		FA54EE8D18417B90002C4EAF /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				FA54EEC91842A145002C4EAF /* GHFile.h */,
-				FA54EECA1842A145002C4EAF /* GHFile.m */,
-				FA54EECC1842A146002C4EAF /* GHCommit.h */,
-				FA54EECD1842A146002C4EAF /* GHCommit.m */,
-				FA54EED51842A79C002C4EAF /* GHAuthor.h */,
-				FA54EED61842A79C002C4EAF /* GHAuthor.m */,
+				FA54EEDD1842AD71002C4EAF /* GHFile.h */,
+				FA54EEDE1842AD71002C4EAF /* GHFile.m */,
+				FA54EEE01842AD72002C4EAF /* GHAuthor.h */,
+				FA54EEE11842AD72002C4EAF /* GHAuthor.m */,
+				FA54EEE31842AD72002C4EAF /* GHCommit.h */,
+				FA54EEE41842AD72002C4EAF /* GHCommit.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -314,6 +317,8 @@
 				FA54EEBE184279D2002C4EAF /* GHCommitDetailsViewController.m */,
 				FA54EEC618429860002C4EAF /* GHCommitFilesViewController.h */,
 				FA54EEC718429860002C4EAF /* GHCommitFilesViewController.m */,
+				FA54EED81842A950002C4EAF /* GHCommitsTableViewCell.h */,
+				FA54EED91842A950002C4EAF /* GHCommitsTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -455,24 +460,25 @@
 				FA54EEA218418258002C4EAF /* GHAuthor+PSObjectMapping.m in Sources */,
 				FA54EEC218427A9D002C4EAF /* GHCommitsViewController.m in Sources */,
 				FA54EEB5184186A7002C4EAF /* GHAPIClient.m in Sources */,
+				FA54EEE21842AD72002C4EAF /* GHAuthor.m in Sources */,
 				FA54EE5D18416B62002C4EAF /* ViewController.m in Sources */,
 				FA54EE9C18418220002C4EAF /* GHCommit+PSObjectMapping.m in Sources */,
+				FA54EEDA1842A950002C4EAF /* GHCommitsTableViewCell.m in Sources */,
 				FA54EEB818425D0A002C4EAF /* GHModel.m in Sources */,
 				FA54EEBF184279D2002C4EAF /* GHCommitDetailsViewController.m in Sources */,
+				FA54EEE51842AD72002C4EAF /* GHCommit.m in Sources */,
 				FA54EEA7184182E6002C4EAF /* GHAuthor+RemoteLogic.m in Sources */,
 				FA54EEA418418282002C4EAF /* GHModelObjects.h in Sources */,
+				FA54EEDF1842AD71002C4EAF /* GHFile.m in Sources */,
 				FA54EE5418416B62002C4EAF /* AppDelegate.m in Sources */,
 				FA54EE8B18417B16002C4EAF /* GHModel.xcdatamodeld in Sources */,
 				FA54EEAD1841830F002C4EAF /* GHFile+RemoteLogic.m in Sources */,
 				FA54EE9F18418244002C4EAF /* GHFile+PSObjectMapping.m in Sources */,
 				FA54EE8818417A76002C4EAF /* NSManagedObject+PSObjectMapping.m in Sources */,
-				FA54EECE1842A146002C4EAF /* GHCommit.m in Sources */,
 				FA54EEAA184182F8002C4EAF /* GHCommit+RemoteLogic.m in Sources */,
 				FA54EEB1184185CC002C4EAF /* GHRemoteLogic.h in Sources */,
 				FA54EEC818429860002C4EAF /* GHCommitFilesViewController.m in Sources */,
 				FA54EE5018416B62002C4EAF /* main.m in Sources */,
-				FA54EED71842A79C002C4EAF /* GHAuthor.m in Sources */,
-				FA54EECB1842A145002C4EAF /* GHFile.m in Sources */,
 				FA54EEAF184183A6002C4EAF /* GHConstants.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
