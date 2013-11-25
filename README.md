@@ -11,6 +11,8 @@ The development of PSObjectMapping came out of a personal need, and although it 
 
 ## Example Setup
 
+To use PSObjectMapping, add the files in the PSObjectMapping directory, or install using [CocoaPods](http://cocoapods.org/).
+
 To support object mapping, you must tell PSObjectMapping which property on your XCDataModel is the object's primary key. An example is depicted in the screenshot below:
 
 ![XCode Data Model Primary Key Setup](https://raw.github.com/premosystems/PSObjectMapping/gh-pages/xcdatamodel-primary-key-screenshot.png)
