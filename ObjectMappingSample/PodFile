@@ -1,4 +1,5 @@
 platform :ios, '7.0'
 inhibit_all_warnings!
-pod "PSObjectMapping", :git => "https://github.com/premosystems/PSObjectMapping.git"
+pod "PSObjectMapping", :path => '../'
+# pod "PSObjectMapping", :git => "https://github.com/premosystems/PSObjectMapping"
 pod "AFNetworkActivityLogger"
