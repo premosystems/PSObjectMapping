@@ -1,1 +1,0 @@
-../../PSObjectMapping/PSObjectMapping/NSManagedObject+PSObjectMapping.h
