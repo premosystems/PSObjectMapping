@@ -9,6 +9,8 @@ The solution consists of a category on NSManagedObject and a protocol describing
 
 The development of PSObjectMapping came out of a personal need, and although it is being used in production, it is still very much a work in progress.
 
+Documentation can be found [HERE](http://premosystems.github.io/PSObjectMapping/docs/html/).
+
 ## Example Setup
 
 To use PSObjectMapping, add the files in the PSObjectMapping directory, or install using [CocoaPods](http://cocoapods.org/).
