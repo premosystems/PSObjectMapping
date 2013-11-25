@@ -57,7 +57,7 @@ NSArray *objectIDs = [GHCommit mapWithCollection:responseObject rootObjectKey:ni
 
 Where responseObject is an NSArray of dictionaries. If the collection is a dictionary with an array inside one of its keys, just tell PSObjectMapping what the rootObjectKey is and it will automatically extract it.
 
-See the including example project for complete details.
+See the included ObjectMappingSample project for complete details.
 
 ## TODO / Known Issues
 
