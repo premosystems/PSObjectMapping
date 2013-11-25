@@ -1,0 +1,684 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PSMappableObject Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PSObjectMapping </a></h1>
+				<a id="developerHome" href="../index.html">PremoSystems</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PSMappableObject Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/countOfEntitiesWithPredicate:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ countOfEntitiesWithPredicate:inContext:</option>
+	
+	<option value="//api/name/createEntity">&nbsp;&nbsp;&nbsp;&nbsp;+ createEntity</option>
+	
+	<option value="//api/name/createInContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ createInContext:</option>
+	
+	<option value="//api/name/customMappings">&nbsp;&nbsp;&nbsp;&nbsp;+ customMappings</option>
+	
+	<option value="//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;+ fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:</option>
+	
+	<option value="//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:</option>
+	
+	<option value="//api/name/findAllInContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ findAllInContext:</option>
+	
+	<option value="//api/name/findFirstByAttribute:withValue:">&nbsp;&nbsp;&nbsp;&nbsp;+ findFirstByAttribute:withValue:</option>
+	
+	<option value="//api/name/findFirstByAttribute:withValue:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ findFirstByAttribute:withValue:inContext:</option>
+	
+	<option value="//api/name/objectPrimaryKeyProperty">&nbsp;&nbsp;&nbsp;&nbsp;+ objectPrimaryKeyProperty</option>
+	
+	<option value="//api/name/objectWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;+ objectWithDictionary:</option>
+	
+	<option value="//api/name/propertyMappings">&nbsp;&nbsp;&nbsp;&nbsp;+ propertyMappings</option>
+	
+	<option value="//api/name/relationshipMappings">&nbsp;&nbsp;&nbsp;&nbsp;+ relationshipMappings</option>
+	
+	<option value="//api/name/remotePrimaryKeyProperty">&nbsp;&nbsp;&nbsp;&nbsp;+ remotePrimaryKeyProperty</option>
+	
+	<option value="//api/name/remotePrimaryKeyWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;+ remotePrimaryKeyWithDictionary:</option>
+	
+	<option value="//api/name/requestAllInContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestAllInContext:</option>
+	
+	<option value="//api/name/requestAllSortedBy:ascending:withPredicate:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestAllSortedBy:ascending:withPredicate:</option>
+	
+	<option value="//api/name/requestAllWithPredicate:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ requestAllWithPredicate:inContext:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/entity">&nbsp;&nbsp;&nbsp;&nbsp;- entity</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/countOfEntitiesWithPredicate:inContext:">countOfEntitiesWithPredicate:inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createEntity">createEntity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createInContext:">createInContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/customMappings">customMappings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:">fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:">fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findAllInContext:">findAllInContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findFirstByAttribute:withValue:">findFirstByAttribute:withValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/findFirstByAttribute:withValue:inContext:">findFirstByAttribute:withValue:inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectPrimaryKeyProperty">objectPrimaryKeyProperty</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectWithDictionary:">objectWithDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertyMappings">propertyMappings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/relationshipMappings">relationshipMappings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/remotePrimaryKeyProperty">remotePrimaryKeyProperty</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/remotePrimaryKeyWithDictionary:">remotePrimaryKeyWithDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestAllInContext:">requestAllInContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestAllSortedBy:ascending:withPredicate:">requestAllSortedBy:ascending:withPredicate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestAllWithPredicate:inContext:">requestAllWithPredicate:inContext:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entity">entity</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PSMappableObject Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PSMappableObject Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PSMappableObject.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findAllInContext:">+&nbsp;findAllInContext:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findFirstByAttribute:withValue:">+&nbsp;findFirstByAttribute:withValue:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/findFirstByAttribute:withValue:inContext:">+&nbsp;findFirstByAttribute:withValue:inContext:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createEntity">+&nbsp;createEntity</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createInContext:">+&nbsp;createInContext:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:">+&nbsp;fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:">+&nbsp;fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestAllSortedBy:ascending:withPredicate:">+&nbsp;requestAllSortedBy:ascending:withPredicate:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestAllWithPredicate:inContext:">+&nbsp;requestAllWithPredicate:inContext:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestAllInContext:">+&nbsp;requestAllInContext:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/countOfEntitiesWithPredicate:inContext:">+&nbsp;countOfEntitiesWithPredicate:inContext:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectWithDictionary:">+&nbsp;objectWithDictionary:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectPrimaryKeyProperty">+&nbsp;objectPrimaryKeyProperty</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/remotePrimaryKeyProperty">+&nbsp;remotePrimaryKeyProperty</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/remotePrimaryKeyWithDictionary:">+&nbsp;remotePrimaryKeyWithDictionary:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/relationshipMappings">+&nbsp;relationshipMappings</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/customMappings">+&nbsp;customMappings</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertyMappings">+&nbsp;propertyMappings</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entity">&ndash;&nbsp;entity</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/countOfEntitiesWithPredicate:inContext:" title="countOfEntitiesWithPredicate:inContext:"></a>
+	<h3 class="subsubtitle method-title">countOfEntitiesWithPredicate:inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSUInteger)countOfEntitiesWithPredicate:(NSPredicate *)<em>searchFilter</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createEntity" title="createEntity"></a>
+	<h3 class="subsubtitle method-title">createEntity</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)createEntity</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createInContext:" title="createInContext:"></a>
+	<h3 class="subsubtitle method-title">createInContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)createInContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/customMappings" title="customMappings"></a>
+	<h3 class="subsubtitle method-title">customMappings</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSDictionary *)customMappings</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:" title="fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:"></a>
+	<h3 class="subsubtitle method-title">fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSFetchedResultsController *)fetchAllSortedBy:(NSString *)<em>sortTerm</em> ascending:(BOOL)<em>ascending</em> withPredicate:(NSPredicate *)<em>searchTerm</em> groupBy:(NSString *)<em>groupingKeyPath</em> delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)<em>delegate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:" title="fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:"></a>
+	<h3 class="subsubtitle method-title">fetchAllSortedBy:ascending:withPredicate:groupBy:delegate:inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSFetchedResultsController *)fetchAllSortedBy:(NSString *)<em>sortTerm</em> ascending:(BOOL)<em>ascending</em> withPredicate:(NSPredicate *)<em>searchTerm</em> groupBy:(NSString *)<em>groupingKeyPath</em> delegate:(id&lt;NSFetchedResultsControllerDelegate&gt;)<em>delegate</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findAllInContext:" title="findAllInContext:"></a>
+	<h3 class="subsubtitle method-title">findAllInContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)findAllInContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findFirstByAttribute:withValue:" title="findFirstByAttribute:withValue:"></a>
+	<h3 class="subsubtitle method-title">findFirstByAttribute:withValue:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)findFirstByAttribute:(NSString *)<em>attribute</em> withValue:(id)<em>searchValue</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/findFirstByAttribute:withValue:inContext:" title="findFirstByAttribute:withValue:inContext:"></a>
+	<h3 class="subsubtitle method-title">findFirstByAttribute:withValue:inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)findFirstByAttribute:(NSString *)<em>attribute</em> withValue:(id)<em>searchValue</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectPrimaryKeyProperty" title="objectPrimaryKeyProperty"></a>
+	<h3 class="subsubtitle method-title">objectPrimaryKeyProperty</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)objectPrimaryKeyProperty</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectWithDictionary:" title="objectWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">objectWithDictionary:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)objectWithDictionary:(NSDictionary *)<em>dict</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertyMappings" title="propertyMappings"></a>
+	<h3 class="subsubtitle method-title">propertyMappings</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@description The first key value pair of the property mapping dictionary should be the local/remote primary key pair. This is used to check if an object already exists in CoreData when calling <a href="#//api/name/objectWithDictionary:">objectWithDictionary:</a> so the system can make a decision as to whenter create a new object, or update an existing one.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (NSDictionary *)propertyMappings</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PSMappableObject.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/relationshipMappings" title="relationshipMappings"></a>
+	<h3 class="subsubtitle method-title">relationshipMappings</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSDictionary *)relationshipMappings</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/remotePrimaryKeyProperty" title="remotePrimaryKeyProperty"></a>
+	<h3 class="subsubtitle method-title">remotePrimaryKeyProperty</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)remotePrimaryKeyProperty</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/remotePrimaryKeyWithDictionary:" title="remotePrimaryKeyWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">remotePrimaryKeyWithDictionary:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)remotePrimaryKeyWithDictionary:(NSDictionary *)<em>dict</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestAllInContext:" title="requestAllInContext:"></a>
+	<h3 class="subsubtitle method-title">requestAllInContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSFetchRequest *)requestAllInContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestAllSortedBy:ascending:withPredicate:" title="requestAllSortedBy:ascending:withPredicate:"></a>
+	<h3 class="subsubtitle method-title">requestAllSortedBy:ascending:withPredicate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSFetchRequest *)requestAllSortedBy:(NSString *)<em>sortTerm</em> ascending:(BOOL)<em>ascending</em> withPredicate:(NSPredicate *)<em>searchTerm</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestAllWithPredicate:inContext:" title="requestAllWithPredicate:inContext:"></a>
+	<h3 class="subsubtitle method-title">requestAllWithPredicate:inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSFetchRequest *)requestAllWithPredicate:(NSPredicate *)<em>searchTerm</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/entity" title="entity"></a>
+	<h3 class="subsubtitle method-title">entity</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSEntityDescription *)entity</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 PremoSystems. All rights reserved. (Last updated: 2013-11-25)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
