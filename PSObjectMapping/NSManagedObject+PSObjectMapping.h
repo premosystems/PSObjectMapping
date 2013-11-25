@@ -8,7 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
-#import "PSMappableObject.h"
+@protocol PSMappableObject;
 
 typedef id<PSMappableObject> (^PSMappingBlock)(id<PSMappableObject> object, NSDictionary *allValues, id values);
 
