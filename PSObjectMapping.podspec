@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.dependency "MagicalRecord", "~> 2.2"
   s.dependency "AFNetworking", "~> 2.0"
   
-  s.prefix_header_contents = "#ifdef __OBJC__\n#import \#import \"NSManagedObject+PSObjectMapping.h\"\n\#import \n#endif"
+  s.prefix_header_contents = "#ifdef __OBJC__\n\#import \"NSManagedObject+PSObjectMapping.h\"\n\#import \n#endif"
   
   end
