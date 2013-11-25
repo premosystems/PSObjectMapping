@@ -7,7 +7,6 @@
 //
 
 #import "NSManagedObject+PSObjectMapping.h"
-#import "PSMappableObject.h"
 
 #define SuppressPerformSelectorLeakWarning(Stuff) \
 do { \
