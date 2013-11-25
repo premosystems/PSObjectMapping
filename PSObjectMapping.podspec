@@ -9,10 +9,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
 
-  s.public_header_files = 'PSObjectMapping/*.h'
+  s.public_header_files = 'PSObjectMapping/*.{h,m}'
   s.source_files = 'PSObjectMapping/*.*'
 
   s.dependency "MagicalRecord", "~> 2.2"
   s.dependency "AFNetworking", "~> 2.0"
+  
+  s.prefix_header_contents = "#ifdef __OBJC__\n#import \#import "PSMappableObject.h\"\n#endif"
   
   end
