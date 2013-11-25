@@ -20,15 +20,22 @@ PODS:
   - AFNetworking/UIKit (2.0.3):
     - AFNetworking/NSURLConnection
   - MagicalRecord (2.2)
+  - PSObjectMapping (0.0.1):
+    - AFNetworking (~> 2.0)
+    - MagicalRecord (~> 2.2)
 
 DEPENDENCIES:
   - AFNetworkActivityLogger
-  - AFNetworking (~> 2.0)
-  - MagicalRecord (~> 2.2)
+  - PSObjectMapping (from `https://github.com/premosystems/PSObjectMapping`)
+
+EXTERNAL SOURCES:
+  PSObjectMapping:
+    :git: https://github.com/premosystems/PSObjectMapping
 
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: c2e99aec5d965a3ee33f0954a20c5ddab18934fe
   AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
   MagicalRecord: b1fc46c99a9749fe7fe7e6f43a89b62ef5201933
+  PSObjectMapping: 0670fec332eaf02acbc9e2687ff2fe3c02b9e78f
 
 COCOAPODS: 0.28.0
