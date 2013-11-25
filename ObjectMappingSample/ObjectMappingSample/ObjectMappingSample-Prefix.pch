@@ -20,4 +20,5 @@
     #import "UIImageView+AFNetworking.h"
 
     #import "NSManagedObject+PSObjectMapping.h"
+    #import "PSMappableObject.h"
 #endif
